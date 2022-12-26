@@ -110,3 +110,47 @@ Happy modeling!
 [0m07:30:44.162479 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x102179fa0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106142340>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106142c10>]}
 [0m07:30:44.163239 [debug] [MainThread]: Flushing usage events
 [0m07:30:44.554921 [debug] [MainThread]: Connection 'debug' was properly closed.
+
+
+============================== 2022-12-20 07:11:41.743921 | 41a62165-7568-41d6-a2d3-911aa8ad6418 ==============================
+[0m07:11:41.743926 [info ] [MainThread]: Running with dbt=1.3.0
+[0m07:11:41.744930 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/elevy/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'config_dir': False, 'which': 'debug', 'indirect_selection': 'eager'}
+[0m07:11:41.745017 [debug] [MainThread]: Tracking: tracking
+[0m07:11:41.751337 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10604d730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10605da90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10605da60>]}
+[0m07:11:41.969424 [debug] [MainThread]: Executing "git --help"
+[0m07:11:41.976353 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m07:11:41.976764 [debug] [MainThread]: STDERR: "b''"
+[0m07:11:41.979228 [debug] [MainThread]: Acquiring new bigquery connection "debug"
+[0m07:11:41.979766 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m07:11:41.981507 [debug] [MainThread]: On debug: select 1 as id
+[0m07:11:43.249324 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=dbt-tutorial-371406&j=bq:8885a3e7-8a69-4522-93d0-bf8b4b638df7:US&page=queryresults
+[0m07:11:43.250880 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107b69310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107b699a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107b69b50>]}
+[0m07:11:43.251738 [debug] [MainThread]: Flushing usage events
+[0m07:11:43.641213 [debug] [MainThread]: Connection 'debug' was properly closed.
+
+
+============================== 2022-12-21 11:35:59.550061 | 977891a0-26a0-4111-8d2d-4866d5db25f2 ==============================
+[0m11:35:59.550066 [info ] [MainThread]: Running with dbt=1.3.0
+[0m11:35:59.550255 [debug] [MainThread]: running dbt with arguments {'write_json': True, 'use_colors': True, 'printer_width': 80, 'version_check': True, 'partial_parse': True, 'static_parser': True, 'profiles_dir': '/Users/elevy/.dbt', 'send_anonymous_usage_stats': True, 'event_buffer_size': 100000, 'quiet': False, 'no_print': False, 'skip_profile_setup': False, 'which': 'init', 'indirect_selection': 'eager'}
+[0m11:35:59.550315 [debug] [MainThread]: Tracking: tracking
+[0m11:35:59.557154 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111b02970>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111b027f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x111b02760>]}
+[0m11:36:03.871118 [debug] [MainThread]: Starter project path: /opt/homebrew/Cellar/dbt-bigquery/1.3.0/libexec/lib/python3.9/site-packages/dbt/include/starter_project
+[0m11:38:36.428181 [info ] [MainThread]: Profile test written to /Users/elevy/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m11:38:36.428696 [info ] [MainThread]: 
+Your new dbt project "test" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m11:38:36.429015 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x115afa9a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x115afaac0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x115afa2e0>]}
+[0m11:38:36.429299 [debug] [MainThread]: Flushing usage events

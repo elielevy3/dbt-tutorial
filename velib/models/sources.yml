@@ -1,0 +1,29 @@
+version: 2
+
+sources:
+    - name: bigquery
+      schema: san_francisco
+      database: bigquery-public-data
+      tables: 
+        - name: bikeshare_trips
+        - name: bikeshare_stations
+
+models:
+  - name: trips
+    columns:
+      - name: start_station_id
+        tests:
+          - relationships:
+              to: ref('stations')
+              field: station_id
+      - name: subscriber_type
+        tests:
+          - accepted_values:
+              values: ["Customer", "Subscriber"]
+      - name: bike_number
+        tests: 
+          - not_null
+      - name: trip_id
+        tests: 
+          - unique
+

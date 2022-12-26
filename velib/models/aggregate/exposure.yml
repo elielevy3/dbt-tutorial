@@ -1,0 +1,16 @@
+version: 2
+
+exposures:
+
+  - name: aggregate
+    type: dashboard
+    maturity: high
+    description: >
+      Analyse bike renting data in San Francisco per year
+
+    depends_on:
+      - ref('enhanced_trips')
+
+    owner:
+      name: Elie Lévy from Wewyse
+      email: elevy@wewyse.com
