@@ -1,5 +1,4 @@
 -- get name of station with most trips starting from
-
 SELECT name
 from {{ ref("stations") }}
 where station_id = 

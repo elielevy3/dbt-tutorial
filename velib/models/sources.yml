@@ -1,5 +1,8 @@
 version: 2
 
+# original name: bigquery-public-data.san_francisco.bikeshare_stations
+# original name: bigquery-public-data.san_francisco.bikeshare_trips
+
 sources:
     - name: bigquery
       schema: san_francisco
@@ -12,6 +15,11 @@ models:
   - name: trips
     columns:
       - name: start_station_id
+        tests:
+          - relationships:
+              to: ref('stations')
+              field: station_id
+      - name: end_station_id
         tests:
           - relationships:
               to: ref('stations')

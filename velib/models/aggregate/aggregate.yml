@@ -9,7 +9,7 @@ exposures:
       Analyse bike renting data in San Francisco per year
 
     depends_on:
-      - ref('enhanced_trips')
+      - ref('aggregate')
 
     owner:
       name: Elie Lévy from Wewyse
