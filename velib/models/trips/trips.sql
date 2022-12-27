@@ -6,7 +6,6 @@ with trips as (
         start_date, 
         start_station_id, 
         end_station_id, 
-        zip_code, 
         subscriber_type, 
         bike_number
 
