@@ -13,5 +13,6 @@ select day_of_week,
 
     round(avg(duration_sec) / 60, 3) as avg_time_in_mn,
     count("*") as nb_trips
+    
     from {{ref("enhanced_trips")}}
     group by day_of_week
