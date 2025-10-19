@@ -78,4 +78,8 @@ The goal is to help you:
 
 ## Practical part
 
-
+- Learn how to use models to represent re-usable business objects (pre-joined tables, aggregated tables)
+- Leverage `analyses/` and `macro/` to refacto specific sql syntax and logic easily
+- Increase robustness of your code with `tests/`
+- Simplify your workflow by using static data as `seeds/`
+- Generate Data lineage diagram with `dbt docs`
