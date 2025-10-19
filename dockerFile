@@ -1,0 +1,28 @@
+# Utiliser une image Python officielle comme base
+FROM python:3.9-slim
+
+# Définir l'utilisateur pour des raisons de sécurité
+RUN useradd -m dbt_user
+
+# Mettre à jour les paquets et installer les dépendances nécessaires
+RUN apt-get update && apt-get install -y \
+  git \
+  && apt install -y vim \
+  && apt-get clean \
+  && rm -rf /var/lib/apt/lists/*
+
+# Passer à l'utilisateur dbt_user
+USER dbt_user
+
+# Créer un dossier de travail
+WORKDIR /home/dbt_user
+
+# Installer dbt via pip
+RUN pip install --no-cache-dir dbt-core dbt-postgres dbt-bigquery # Ajoutez ici d'autres adaptateurs dbt si nécessaire
+
+# Ajouter dbt au PATH (optionnel, Python l'ajoute souvent automatiquement)
+ENV PATH="/home/dbt_user/.local/bin:${PATH}"
+
+# Vérification : définir une commande par défaut pour vérifier dbt
+CMD ["dbt", "--version"]
+CMD ["bash"]
